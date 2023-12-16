@@ -83,10 +83,6 @@ html, body {
     margin-right: 5px;
 }
 
-label {
-    white-space: nowrap;
-}
-
 .form-footer a, a:visited{
     color: black;
 }
@@ -106,6 +102,7 @@ form input {
     margin-right: 10px;
     width: 14px;
     height: 14px;
+
 }
 
 .form-footer {
@@ -121,6 +118,7 @@ form input {
 
 .dvFlex label {
     margin-left: 5px;
+    white-space: nowrap;
 }
 
 /* white-space: nowrap;
