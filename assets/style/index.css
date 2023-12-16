@@ -104,6 +104,8 @@ form input {
 #chkShowpsw {
     margin-top: 5px;
     margin-right: 10px;
+    width: 14px;
+    height: 14px;
 }
 
 .form-footer {
@@ -111,6 +113,14 @@ form input {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+}
+
+.dvFlex{
+    display: flex;
+}
+
+.dvFlex label {
+    margin-left: 5px;
 }
 
 /* white-space: nowrap;
