@@ -30,7 +30,6 @@ document.getElementById('formLogin').addEventListener('submit', function(event) 
     if(!validateUser(inputUserName.value, inputPsw.value))
     {
         pWrongInfo.style.display = 'block';
-        console.log('111')
         event.preventDefault();
     }
 });

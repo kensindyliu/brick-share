@@ -15,6 +15,7 @@ async function getUsers(){
         const result = await fetch(URL,options);
         const data = await result.json();
         const users = data.results;
+        console.log(users);
         displayUsers(users);
     } catch(err) {
         console.error(err.message);
