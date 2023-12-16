@@ -2,19 +2,15 @@
 
 saveUserInfo('mitt@mitt.ca', 'happymitt');
 function saveUserInfo(userName, userPsw){
-    localStorage.setItem('userInfo', userName.toLowerCase().trim() + '*' + userPsw);
+    localStorage.setItem('userName', userName);
+    localStorage.setItem('userPsw', userPsw);
 }
 
-function readUserInfo(){
-    return localStorage.getItem('userInfo');
-}
-
-function validateUser(userName, userPsw){
-    let userInfo = readUserInfo();
-    let inputUserInfo = userName.toLowerCase().trim() + '*' + userPsw;
-    console.log(userInfo,inputUserInfo);
-    return userInfo === inputUserInfo;
-
+function validateUser(userName1, userPsw1){
+    let userName2 = localStorage.getItem('userName').toLowerCase().trim();
+    let userPsw2 = localStorage.getItem('userPsw');
+    userName1 = userName1.toLowerCase().trim();
+    return userName1 === userName2 && userPsw1 === userPsw2;
 }
 
 const inputUserName = document.querySelector('#inputUserName');
