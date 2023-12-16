@@ -141,7 +141,7 @@ i {
   margin:30px auto;
   margin-bottom:15px;
   border-radius: 50%;
-  background: url('../img/Alex.jpeg') no-repeat center center / cover;
+  background: url('../img/headIcon.jpg') no-repeat center center / cover;
 }
 
 .name {
@@ -396,7 +396,7 @@ p {
   border-radius: 50%;
   background-color: #fff;
   cursor: pointer;
-  background: url('../img/Alex.jpeg') no-repeat center center / cover;
+  background: url('../img/headIcon.jpg') no-repeat center center / cover;
 }
 
 .tail {
