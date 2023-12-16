@@ -28,7 +28,7 @@ document.getElementById('formLogin').addEventListener('submit', function(event) 
         pWrongInfo.style.display = 'block';
         event.preventDefault();
     } else {
-        window.location.href = 'main.html';
+        window.location = 'main.html';
     }
 
 });
