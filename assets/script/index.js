@@ -1,6 +1,6 @@
 'use strict'
 
-saveUserInfo('ken@mitt.ca', 'happymitt');
+saveUserInfo('mitt@mitt.ca', 'happymitt');
 function saveUserInfo(userName, userPsw){
     localStorage.setItem('userInfo', userName.toLowerCase().trim() + '*' + userPsw);
 }
@@ -17,13 +17,30 @@ function validateUser(userName, userPsw){
 
 }
 
+const inputUserName = document.querySelector('#inputUserName');
+inputUserName.value ='';
+const inputPsw = document.querySelector('#inputPsw'); 
+inputPsw.value = '';
+const chkShowpsw = document.querySelector('#chkShowpsw');
+chkShowpsw.checked = false;
+const pWrongInfo = document.querySelector('.pWrongInfo');
+
+
 document.getElementById('formLogin').addEventListener('submit', function(event) {
-    const inputUserName = document.querySelector('#inputUserName');
-    const inputPsw = document.querySelector('#inputPsw'); 
-    console.log('abc');
     if(!validateUser(inputUserName.value, inputPsw.value))
     {
-        console.log('password is incorrect!')
+        pWrongInfo.style.display = 'block';
+        console.log('111')
         event.preventDefault();
     }
 });
+
+
+chkShowpsw.addEventListener('change', ()=>{
+    if(chkShowpsw.checked){
+        inputPsw.type = 'text';
+    } else {
+        inputPsw.type = 'password';
+    }
+
+})

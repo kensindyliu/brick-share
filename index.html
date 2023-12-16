@@ -19,18 +19,21 @@
     </head>
     <body>
         <div class="container">
-            <div class="dvLeft">
+            <div class="dvLeftContainer">
+                <div class="dvLeft">
 
+                </div>
             </div>
             <div class="dvRight">
                 <p class="title">Welcome to <span>BricShare</span></p>
                 <p class="decribe">We made it easy for everyone to invest in real estate</p>
-                <form id="formLogin" action="xxx.html" method="post">
+                <form id="formLogin" action="main.html" method="post">
+                    <p class="pWrongInfo">Invalid Shaw ID or password. Please try again</p>
                     <input id="inputUserName" type="email" placeholder="Email" required>
                     <input id="inputPsw" type="password" placeholder="Password" required>
                     <div class="form-footer">
                         <div style="display: flex;">
-                            <input type="checkbox" id="chkRememberMe"><label>Remember me </label>
+                            <input id="chkShowpsw" type="checkbox" id="chkRememberMe"><label>Show password </label>
                         </div>
                         <a href="#">Forgot password?</a>
                     </div>
