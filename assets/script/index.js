@@ -26,6 +26,7 @@ document.getElementById('formLogin').addEventListener('submit', function(event) 
     if(!validateUser(inputUserName.value, inputPsw.value))
         {
             pWrongInfo.innerHTML = 'Incorrect username or password.';
+            pWrongInfo.style.display = 'block';
             event.preventDefault();
         } else {
             window.location.href = 'main.html';
