@@ -24,13 +24,12 @@ const pWrongInfo = document.querySelector('.pWrongInfo');
 
 document.getElementById('formLogin').addEventListener('submit', function(event) {
     if(!validateUser(inputUserName.value, inputPsw.value))
-    {
-        pWrongInfo.style.display = 'block';
-        event.preventDefault();
-    } else {
-        window.location = 'main.html';
-    }
-
+        {
+            pWrongInfo.innerHTML = 'Incorrect username or password.';
+            event.preventDefault();
+        } else {
+            window.location.href = 'main.html';
+        }
 });
 
 
